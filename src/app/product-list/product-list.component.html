@@ -6,3 +6,17 @@ Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
 -->
+
+
+
+ <!--
+   structural directive
+With *ngFor, the <div> repeats for each product in the list.
+Structural directives shape or reshape the DOM's structure, by adding, removing, and manipulating elements.
+-->
+<div *ngFor="let product of products">
+  <h3>
+   <!--The {{ product.name }} statement is an example of Angular's interpolation syntax. Interpolation {{ }} lets you render the property value as text.-->
+      {{ product.name }}
+  </h3>
+</div>
